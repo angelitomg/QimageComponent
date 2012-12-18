@@ -61,8 +61,6 @@
 		*
 		* @params:
 		* $data['file'] 	-> array with image data (found in $_FILES)
-		* $data['tmp_name'] -> temp image filename
-		* $data['name']		-> original image filename
 		* $data['path'] 	-> destination path
 		*
 		*/
