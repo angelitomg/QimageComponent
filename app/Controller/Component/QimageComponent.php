@@ -93,7 +93,9 @@
 			/**
 			* Generate name of the destination file
 			*/
-			$ext = strtolower(end(explode('.', $data['file']['name'])));
+			$filename_array = explode('.', $data['file']['name']);
+			$ext = end($filename_array);
+			$ext = strtolower($ext);
 			$name = uniqid() . date('dmYHis') . '.' . $ext;
 			$complete_path = $data['path'] . $name;
 			
@@ -388,7 +390,9 @@
 		*/
 		private function verifyMime($file){
 			
-			$extension = (end(explode('.', $file)));
+			$filename_array = explode('.',$file);
+
+			$extension = end($filename_array);
 			
 			$extension = strtolower($extension);
 			
