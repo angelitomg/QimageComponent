@@ -51,7 +51,7 @@
 		* @return mixed
 		*
 		*/
-		public function copy(array $data){
+		public function copy($data){
 			
 			// Verify file and path
 			if (!isset($data['file']) || !isset($data['path']) || !is_array($data['file'])){
@@ -99,7 +99,7 @@
 		* @return bool
 		*
 		*/
-		public function watermark(array $data){
+		public function watermark($data){
 			
 			// Verify files
 			if (!is_file($this->watermarkImage)){
@@ -175,10 +175,10 @@
 		* size in the correct property (width or height).
 		*
 		* @param array $data
-		* @return mixed
+		* @return bool
 		*
 		*/
-		public function resize(array $data){
+		public function resize($data){
 			
 			// Verify parameters
 			if (!isset($data['file']) || (!isset($data['width']) && !isset($data['height']))){
