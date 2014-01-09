@@ -1,7 +1,7 @@
 Qimage Component
 ==============
 
-Quick Image Component (Qimage) is a component for CakePHP that facilitates the manipulation and upload images.  
+Quick Image Component (Qimage) is a component for CakePHP to facilitate image manipulation and upload.
 
 Tested on CakePHP 2.x
 
