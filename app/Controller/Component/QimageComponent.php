@@ -288,12 +288,12 @@
 		/**
 		 * Method to crop an image
 		 * 
-		 * $data['file']	-> complete path of original image file
-		 * $data['w']		-> width of crop area
-		 * $data['h']		-> height of crop area
-		 * $data['x']		-> x coordinate of source point
-		 * $data['y']		-> y coordinate of source point
-		 * $data['output']	-> output path where cropped image will be saved
+		 * $data['file']        -> complete path of original image file
+		 * $data['w']           -> width of crop area
+		 * $data['h']           -> height of crop area
+		 * $data['x']           -> x coordinate of source point
+		 * $data['y']           -> y coordinate of source point
+		 * $data['output']      -> output path where cropped image will be saved
 		 *
 		 * @param array $data
 		 * @return bool
@@ -387,8 +387,8 @@
 		 * @return string
 		 */
 		private function _getCreateFunction($mime){
-			if ($mime == 'image/jpeg' || $mime == 'image/pjpeg'){
-	            return 'imagecreatefromjpeg';
+		    if ($mime == 'image/jpeg' || $mime == 'image/pjpeg'){
+	            	return 'imagecreatefromjpeg';
 		    } elseif ($mime == 'image/gif') {
 		        return 'imagecreatefromgif';
 		    } elseif ($mime == 'image/png') {
