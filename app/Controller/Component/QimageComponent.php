@@ -170,7 +170,7 @@
 		 * $data['width']  		-> new width
 		 * $data['height'] 		-> new height
 		 * $data['output'] 		-> output path where resized image will be saved
-		 * $data['proportional'] -> (true or false). If true, the image will be resized 
+		 * $data['proportional'] 	-> (true or false). If true, the image will be resized 
 		 * only if its dimensions are larger than the values reported in width and height 
 		 * parameters. Default: true.
 		 *
@@ -288,12 +288,12 @@
 		/**
 		 * Method to crop an image
 		 * 
-		 * $data['file']   	-> complete path of original image file
-		 * $data['w']	  	-> width of crop area
-		 * $data['h'] 		-> height of crop area
+		 * $data['file']	-> complete path of original image file
+		 * $data['w']		-> width of crop area
+		 * $data['h']		-> height of crop area
 		 * $data['x']		-> x coordinate of source point
 		 * $data['y']		-> y coordinate of source point
-		 * $data['output'] 	-> output path where cropped image will be saved
+		 * $data['output']	-> output path where cropped image will be saved
 		 *
 		 * @param array $data
 		 * @return bool
