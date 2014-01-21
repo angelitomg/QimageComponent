@@ -8,19 +8,23 @@ Tested on CakePHP 2.x
 Methods
 --------------
 
-copy() -> For copy uploaded images.  
-resize() -> For resize an image.  
-watermark() -> To add watermark in an image.  
-verifyMime() -> An internal method for verify the MIME type of a file based on file extension.
+copy -> Copy uploaded images.  
+resize -> Resize an image.  
+watermark -> Add watermark in an image.  
+crop -> Crop an image.
+_verifyMime -> Verify the MIME type of a file based on file extension.
+_getCreateFunction -> Get image creation function based on image mime type.
+_getFinishFunction -> Get image finish function based on image mime type.
+_getErrors -> Get all errors that occurred in Qimage.
 
-For more details of the methods, see comments in the QimageComponent.php file.  
+More details can be found in the comments of the methods. 
 
 Installation
 --------------
 
  - Copy QimageComponent.php to /app/Controller/Component/
  - Add QimageComponent to components array of your controller: var $components = array('Qimage');
- - Call the Qimage methods: $this->Qimage->methodName();  
+ - Call Qimage methods: $this->Qimage->methodName();  
  
  NOTE: default watermark image is /app/webroot/img/watermark.png
 
