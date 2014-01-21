@@ -288,12 +288,12 @@
 		/**
 		 * Method to crop an image
 		 * 
-		 * $data['file']   		-> complete path of original image file
-		 * $data['w']	  		-> width of crop area
-		 * $data['h'] 			-> height of crop area
-		 * $data['x']			-> x coordinate of source point
-		 * $data['y']			-> y coordinate of source point
-		 * $data['output'] 		-> output path where cropped image will be saved
+		 * $data['file']   	-> complete path of original image file
+		 * $data['w']	  	-> width of crop area
+		 * $data['h'] 		-> height of crop area
+		 * $data['x']		-> x coordinate of source point
+		 * $data['y']		-> y coordinate of source point
+		 * $data['output'] 	-> output path where cropped image will be saved
 		 *
 		 * @param array $data
 		 * @return bool
@@ -302,12 +302,12 @@
 
 			// Validates params
 			if (!isset($data['file']) ||
-				!isset($data['w']) ||
-				!isset($data['h']) ||
-				!isset($data['x']) ||
-				!isset($data['y']) ||
-				!isset($data['output'])) {
-				$this->errors[] = 'Params missing!';
+			    !isset($data['w']) ||
+			    !isset($data['h']) ||
+			    !isset($data['x']) ||
+			    !isset($data['y']) ||
+			    !isset($data['output'])) {
+				 $this->errors[] = 'Params missing!';
 			}
 			
 			if (!is_file($data['file'])) {
@@ -335,15 +335,15 @@
 
 			// Crop image
 			imagecopyresampled($dst_img, 
-							   $src_img, 
-							   0, 
-							   0, 
-							   (int) $data['x'], 
-							   (int) $data['y'],
-	        				   (int) $data['w'],
-	        				   (int) $data['h'],
-	        				   (int) $data['w'], 
-	        				   (int) $data['h']);
+					   $src_img, 
+					   0, 
+					   0, 
+					   (int) $data['x'], 
+					   (int) $data['y'],
+	        			   (int) $data['w'],
+	        			   (int) $data['h'],
+	        			   (int) $data['w'], 
+	        			   (int) $data['h']);
 
 			// Finish image
 			if ($img['mime'] == 'image/jpeg' || $img['mime'] == 'image/pjpeg'){
