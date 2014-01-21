@@ -8,21 +8,21 @@ Tested on CakePHP 2.x
 Methods
 --------------
 
-copy -> Copy uploaded images.  
+**copy** -> Copy uploaded images.  
 
-resize -> Resize an image.  
+**resize** -> Resize an image.  
 
-watermark -> Add watermark in an image.  
+**watermark** -> Add watermark in an image.  
 
-crop -> Crop an image.
+**crop** -> Crop an image.
 
-_verifyMime -> Verify the MIME type of a file based on file extension.
+**_verifyMime** -> Verify the MIME type of a file based on file extension.
 
-_getCreateFunction -> Get image creation function based on image mime type.
+**_getCreateFunction** -> Get image creation function based on image mime type.
 
-_getFinishFunction -> Get image finish function based on image mime type.
+**_getFinishFunction** -> Get image finish function based on image mime type.
 
-_getErrors -> Get all errors that occurred in Qimage.
+**_getErrors** -> Get all errors that occurred in Qimage.
 
 More details can be found in the comments of the methods. 
 
