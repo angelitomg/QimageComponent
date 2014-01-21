@@ -166,11 +166,11 @@
 		/**
 		 * Method responsible for resize an image. Return false on error.
 		 *
-		 * $data['file']   		-> complete path of original image file
-		 * $data['width']  		-> new width
-		 * $data['height'] 		-> new height
-		 * $data['output'] 		-> output path where resized image will be saved
-		 * $data['proportional'] 	-> (true or false). If true, the image will be resized 
+		 * $data['file']                -> complete path of original image file
+		 * $data['width']               -> new width
+		 * $data['height']              -> new height
+		 * $data['output']              -> output path where resized image will be saved
+		 * $data['proportional']        -> (true or false). If true, the image will be resized 
 		 * only if its dimensions are larger than the values reported in width and height 
 		 * parameters. Default: true.
 		 *
