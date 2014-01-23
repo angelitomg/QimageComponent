@@ -14,15 +14,15 @@ Methods
 
 **watermark** -> Add watermark in an image.  
 
-**crop** -> Crop an image.
+**crop** -> Crop an image.  
+
+**getErrors** -> Get all errors that occurred in Qimage.
 
 **_verifyMime** -> Verify the MIME type of a file based on file extension.
 
 **_getCreateFunction** -> Get image creation function based on image mime type.
 
 **_getFinishFunction** -> Get image finish function based on image mime type.
-
-**_getErrors** -> Get all errors that occurred in Qimage.
 
 More details can be found in the comments of the methods. 
 
