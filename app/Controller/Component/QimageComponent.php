@@ -213,9 +213,6 @@
 				$this->errors[] = 'Invalid file type!';
 				return false;
 			}
-				
-			if (!isset($data['proportional']))
-				$data['proportional'] = true;	
 			
 			// Validates width and height
 			$width  = (isset($data['width']))  ? (int) $data['width']  : 0;
