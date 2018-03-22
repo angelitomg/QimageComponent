@@ -8,7 +8,7 @@
 	 * CakePHP (version 2) component to upload, resize, crop and
 	 * add watermark to images.
 	 *
-	 * @author Angelito M. Goulart <ange.sap@hotmail.com>
+	 * @author Angelito M. Goulart <angelitomgoulart@gmail.com>
 	 *
 	 */
 	class QimageComponent extends Component{
