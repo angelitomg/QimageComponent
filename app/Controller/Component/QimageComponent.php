@@ -239,15 +239,21 @@
 				// If width or height not defined, it's necessary calculate proportional size
 				if (!($width > 0 && $height > 0)){
 					
-					
+					$source_side;
+                    $source_origin;
+                    
 					// Verify if image is horizontal or vertical
 					if ($original_height > $original_width){
-						$height = ($data['width'] > 0) ? $data['width'] : $data['height'];
-						$width  = ($height / $original_height) * $original_width;
+                        $source_side = ($data['width'] > 0) ? $data['width'] : $data['height'];
+                        $source_origin = ($data['width'] > 0) ? $original_width : $original_height;
 					} else {
-						$width = ($data['height'] > 0) ? $data['height'] : $data['width'];
-						$height = ($width / $original_width) * $original_height;
+                        $source_side = ($data['height'] > 0) ? $data['height'] : $data['width'];
+                        $source_origin = ($data['height'] > 0) ? $original_height : $original_width;						
 					}
+                    
+                    $factor = ($source_side / $source_origin);
+                    $height = $factor * $original_height;
+                    $width = $factor * $original_width;
 					
 				} 
 			
